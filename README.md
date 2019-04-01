@@ -1,9 +1,9 @@
 # Group Project: Decision-Tree based Checkers AI
-## Artificial Intelligence and Heuristic Programming
-## 3460:460-001 Spring 2019
+### Artificial Intelligence and Heuristic Programming
+### 3460:460-001 Spring 2019
 
-### Daniel Hollo
-### Benjamin Hawk
+#### Daniel Hollo
+#### Benjamin Hawk
 ------------------
 
 ## Summary: 
