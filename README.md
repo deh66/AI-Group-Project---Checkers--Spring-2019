@@ -1,2 +1,17 @@
-# AI-Group-Project---Checkers--Spring-2019
-An implementation of an open source Checkers game that implements a Decision Tree based Artifical Intelegence.
+# Artificial Intelligence and Heuristic Programming
+## 3460:460-001 Spring 2019
+## Group Project: Checkers AI
+
+### By:
+### Daniel Hollo
+### Benjamin Hawk
+------------------
+
+## Summary: 
+
+This project implements an open source Checkers game and utilizes a Decision-Tree based Artifical Intelegence to 
+play as an opponent.
+
+## Open Source Disclamer:
+
+This project utilizes [........] by [...], which provides the interface and implementation of the Checkers game.
