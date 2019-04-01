@@ -1,0 +1,45 @@
+On Windows:
+Step 1: Cloning the Repo
+
+1) Open CMD or PowerShell in the directory you wish to clone the repository to.
+	- This can be done by luanching either and navigating to the directory (cd [directory]...)
+	- OR: open the directory in file explorer, double click in the address/directory bar at the top,
+	and type "cmd" or "powershell" and hit enter.
+	
+2) In the github repository, click "Clone or download" and copy the address to your clipbord
+	
+3) In CMD or PowerShell: type "git clone " and paste the address from the github repository.
+	- Then hit enter.
+	- This will clone the repository and all it's files to that directory on your computer.
+	
+Step 2: IDE Stuff
+	
+4) Open your IDE of choice
+
+5) Create a new project in the git directory "../AI Group Project - Checkers - Spring-2019/"
+	- Make Sure your IDE makes a NEW DIRECTORY inside of "/AI Group Project - Checkers - Spring-2019/"
+	where all it's files will be stored.
+	
+6) In "../AI Group Project - Checkers - Spring-2019/", open ".gitignore"
+	- At the bottom of the file, type: "**/[Your-IDE-Directory-Name]/"
+		- i.e. "**/Dans Visual Studio Folder/"
+	- This will exclude all of the artifact files that your IDE will create as we will probably be 
+	using different IDEs (or different versions of the same).
+	
+Step 3: Basic git Operations
+
+7) Track the current changes / Add the current changes to a commit (same thing, different words)
+	- in cmd or PowerShell, type 'git add .'
+	- This will add/stage all changed or new files and for your next commit. (that are not ignored by the .gitignore)
+	
+(optional) Check the status of staged files
+	- in cmd or PowerShell, type 'git status'
+	- This will show what files have changes that are staged to commit, and which are not staged.
+
+8) Commit your change to the repository:
+	- in cmd or PowerShell, type 'git commit -m "[A-Breif-Commit-Message]"'
+	- This groups all the staged changes together and adds a message that discribes what this commit does.
+	
+9) Actually push your changes to the remote repository
+	- in cmd or PowerShell, type 'git push origin master'
+	- This pushes any commits you have made to the remote repository. (this stage actually moves the code)

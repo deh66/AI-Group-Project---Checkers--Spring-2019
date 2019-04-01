@@ -1,0 +1,32 @@
+git status
+	- Displays tracked and untracked files with changes 
+	(what will and what will not be put in a commit if you make one right now).
+
+git add .
+	- Adds files to be tracked for next commit.
+		- the '.' means everything, but you can specify a filepath if you would like
+		- e.g. git add Source/Source.cpp
+			Will only add Source.cpp in the Source directory, relative to your working directory
+
+git commit -m [Message]
+	- Rolls all current staged changes into a package of sorts and adds a message describing what this 
+	commit will do to the codebase (what it changes)
+	
+git commit -am [Message]
+	- Same as "git commit -m [Message]", but will automatically track any untracked changes in files 
+	THAT HAVE ALREADY BEEN ADDED BEFORE (only tracks modifications to files, not entirely new files).
+	
+git push origin master
+	- Pushes any commits that are on this local machine to the remote repository. This actually moves the 
+	changes from your machine to the remote repository.
+	
+git pull origin master
+	- Pulls all changes from the remote server down to your local machine. This updates your code.
+	
+
+NOTE: ALWAYS PULL BEFORE YOU START AND ALWAYS PUSH WHEN YOU FINISH
+	- If there is a change in the remote version of a file AND if there is a change to the local 
+	version of a file (something changed since the last push/pull), there will likely be a 
+	MERGE CONFLICT.
+		- These are painful and usually have to be handled manually.
+		- Lets coordinate so we dont work on the same file at once to avoid this.
