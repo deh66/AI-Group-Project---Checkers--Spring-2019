@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" size="2019,1151" id="ija.projekt.gui" metadata="uml2-1.0" initialized="true" zoom="0.75" tag="1000" key="32303037303533312D3130303020494A412D50726F6A656B742F64696D697472696A">
+  <children xsi:type="editmodel:ClassEditModel" name="AboutDialog" location="314,607" size="132,103" id="ija.projekt.gui/AboutDialog" runTimeClassModel="actionPerformed(Ljava.awt.event.ActionEvent;),AboutDialog(Ljava.awt.Window;),showDialog()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="109,54">
+      <children xsi:type="editmodel:MethodEditModel" name="AboutDialog" id="ija.projekt.gui/AboutDialog#AboutDialog(Ljava.awt.Window;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="actionPerformed" id="ija.projekt.gui/AboutDialog#actionPerformed(Ljava.awt.event.ActionEvent;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="showDialog" id="ija.projekt.gui/AboutDialog#showDialog()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.0" name="GameBoard" location="540,480" size="130,121" id="ija.projekt.gui/GameBoard" runTimeClassModel="GameBoard(Lija.projekt.game.Game;),paintComponent(Ljava.awt.Graphics;),setInteractivity(Z),click(II)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="107,72">
+      <children xsi:type="editmodel:MethodEditModel" name="GameBoard" id="ija.projekt.gui/GameBoard#GameBoard(Lija.projekt.game.Game;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="click" id="ija.projekt.gui/GameBoard#click(II)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="paintComponent" id="ija.projekt.gui/GameBoard#paintComponent(Ljava.awt.Graphics;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setInteractivity" id="ija.projekt.gui/GameBoard#setInteractivity(Z)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.5/@sourceConnections.0" name="GamePanel" location="555,225" size="123,139" id="ija.projekt.gui/GamePanel" runTimeClassModel="GamePanel(Lija.projekt.game.Game;),refresh(),setInteractivity(Z),name,equals(Ljava.lang.Object;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="79,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="name" id="ija.projekt.gui/GamePanel#name"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="100,72">
+      <children xsi:type="editmodel:MethodEditModel" name="GamePanel" id="ija.projekt.gui/GamePanel#GamePanel(Lija.projekt.game.Game;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="equals" id="ija.projekt.gui/GamePanel#equals(Ljava.lang.Object;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="refresh" id="ija.projekt.gui/GamePanel#refresh()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setInteractivity" id="ija.projekt.gui/GamePanel#setInteractivity(Z)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ija.projekt.gui/GameBoard@gameBoard+ija.projekt.gui/GamePanel@" source="//@children.2" target="//@children.1" targetEnd="//@children.2/@sourceConnections.0/@children.2" label="//@children.2/@sourceConnections.0/@children.0" sourceEnd="//@children.2/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="57,139" id="ija.projekt.gui/GameBoard@gameBoard+ija.projekt.gui/GamePanel@|ija.projekt.gui/GamePanel#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="gameBoard" location="72,0" id="ija.projekt.gui/GameBoard@gameBoard+ija.projekt.gui/GamePanel@|ija.projekt.gui/GameBoard#gameBoard" multiplicityLabel="//@children.2/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.2/@sourceConnections.0/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" # gameBoard" location="619,459" size="67,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="587,459" size="18,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="NetworkGameDialog" location="60,554" size="173,157" id="ija.projekt.gui/NetworkGameDialog" runTimeClassModel="accept(Ljava.lang.String;),NetworkGameDialog(Ljavax.swing.JFrame;),actionPerformed(Ljava.awt.event.ActionEvent;),errorHandler(Ljava.lang.String;),showDialog(),connected(Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="128,108">
+      <children xsi:type="editmodel:MethodEditModel" name="NetworkGameDialog" id="ija.projekt.gui/NetworkGameDialog#NetworkGameDialog(Ljavax.swing.JFrame;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="accept" id="ija.projekt.gui/NetworkGameDialog#accept(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="actionPerformed" id="ija.projekt.gui/NetworkGameDialog#actionPerformed(Ljava.awt.event.ActionEvent;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="connected" id="ija.projekt.gui/NetworkGameDialog#connected(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="errorHandler" id="ija.projekt.gui/NetworkGameDialog#errorHandler(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="showDialog" id="ija.projekt.gui/NetworkGameDialog#showDialog()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.5/@sourceConnections.2" name="ReplyListener" location="384,44" size="144,131" id="ija.projekt.gui.replay/ReplyListener" runTimeClassModel="replayModeStarted(),replayModeEnded(),replayRefreshGui()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="121,54">
+      <children xsi:type="editmodel:MethodEditModel" name="replayModeEnded" id="ija.projekt.gui.replay/ReplyListener#replayModeEnded()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="replayModeStarted" id="ija.projekt.gui.replay/ReplyListener#replayModeStarted()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="replayRefreshGui" id="ija.projekt.gui.replay/ReplyListener#replayRefreshGui()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="ApplicationWindow" location="282,225" size="166,283" id="ija.projekt.gui/ApplicationWindow" runTimeClassModel="replayModeStarted(),setPlayerBar(Ljava.lang.String;),exit(),replayModeEnded(),refreshGui(),showHint(),showWarningDialog(Ljava.lang.String;Ljava.lang.String;),setStatusBar(Ljava.lang.String;),actionPerformed(Ljava.awt.event.ActionEvent;),run(),showInfoDialog(Ljava.lang.String;Ljava.lang.String;),replayRefreshGui(),ApplicationWindow()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="127,234">
+      <children xsi:type="editmodel:MethodEditModel" name="ApplicationWindow" id="ija.projekt.gui/ApplicationWindow#ApplicationWindow()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="actionPerformed" id="ija.projekt.gui/ApplicationWindow#actionPerformed(Ljava.awt.event.ActionEvent;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="exit" id="ija.projekt.gui/ApplicationWindow#exit()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="refreshGui" id="ija.projekt.gui/ApplicationWindow#refreshGui()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="replayModeEnded" id="ija.projekt.gui/ApplicationWindow#replayModeEnded()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="replayModeStarted" id="ija.projekt.gui/ApplicationWindow#replayModeStarted()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="replayRefreshGui" id="ija.projekt.gui/ApplicationWindow#replayRefreshGui()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="run" id="ija.projekt.gui/ApplicationWindow#run()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setPlayerBar" id="ija.projekt.gui/ApplicationWindow#setPlayerBar(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setStatusBar" id="ija.projekt.gui/ApplicationWindow#setStatusBar(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="showHint" id="ija.projekt.gui/ApplicationWindow#showHint()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="showInfoDialog" id="ija.projekt.gui/ApplicationWindow#showInfoDialog(Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="showWarningDialog" id="ija.projekt.gui/ApplicationWindow#showWarningDialog(Ljava.lang.String;Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ija.projekt.gui/GamePanel@gamePanel+ija.projekt.gui/ApplicationWindow@" source="//@children.5" target="//@children.2" targetEnd="//@children.5/@sourceConnections.0/@children.2" label="//@children.5/@sourceConnections.0/@children.0" sourceEnd="//@children.5/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="166,69" id="ija.projekt.gui/GamePanel@gamePanel+ija.projekt.gui/ApplicationWindow@|ija.projekt.gui/ApplicationWindow#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="gamePanel" location="0,69" id="ija.projekt.gui/GamePanel@gamePanel+ija.projekt.gui/ApplicationWindow@|ija.projekt.gui/GamePanel#gamePanel" multiplicityLabel="//@children.5/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.5/@sourceConnections.0/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" # gamePanel" location="483,272" size="64,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="529,300" size="18,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="ija.projekt.gui.GuiUpdate/GuiUpdateListener&lt;-ija.projekt.gui/ApplicationWindow" source="//@children.5" target="//@children.6" targetEnd="//@children.5/@sourceConnections.1/@children.1" sourceEnd="//@children.5/@sourceConnections.1/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="35,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="123,95"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="ija.projekt.gui.replay/ReplyListener&lt;-ija.projekt.gui/ApplicationWindow" source="//@children.5" target="//@children.4" targetEnd="//@children.5/@sourceConnections.2/@children.1" sourceEnd="//@children.5/@sourceConnections.2/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="133,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="31,131"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.5/@sourceConnections.1" name="GuiUpdateListener" location="194,44" size="160,95" id="ija.projekt.gui.GuiUpdate/GuiUpdateListener" runTimeClassModel="refreshGui()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="82,18">
+      <children xsi:type="editmodel:MethodEditModel" name="refreshGui" id="ija.projekt.gui.GuiUpdate/GuiUpdateListener#refreshGui()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" properties="wireOptions=3;Product=eUML2" autoName="false"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>

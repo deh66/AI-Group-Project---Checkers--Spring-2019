@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" size="1514,863" id="ija.projekt.test" metadata="uml2-1.0" initialized="true" tag="1000" key="32303037303533312D3130303020494A412D50726F6A656B742F64696D697472696A">
+  <children xsi:type="editmodel:ClassEditModel" name="UnitTest" location="50,50" size="101,211" id="ija.projekt.test/UnitTest">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="78,162">
+      <children xsi:type="editmodel:MethodEditModel" name="setUp" id="ija.projekt.test/UnitTest#setUp()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="tearDown" id="ija.projekt.test/UnitTest#tearDown()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="test01" id="ija.projekt.test/UnitTest#test01()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="test02" id="ija.projekt.test/UnitTest#test02()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="test03" id="ija.projekt.test/UnitTest#test03()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="test04" id="ija.projekt.test/UnitTest#test04()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="test05" id="ija.projekt.test/UnitTest#test05()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="test06" id="ija.projekt.test/UnitTest#test06()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="test07" id="ija.projekt.test/UnitTest#test07()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" properties="wireOptions=3;Product=eUML2" autoName="false"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>
