@@ -28,3 +28,6 @@
 * 	To Choose Move:
 * 		Search Tree for branch path with the largest number of possible paths to success states
 */
+
+package checkers;
+

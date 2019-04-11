@@ -10,3 +10,24 @@
  * 	Contains a custom built Decision Tree algorithm using board state 
  * 		spaces to determine AI moves.
 */
+
+/**
+* Psudo code:
+* 
+* 	To Generate State Tree:
+* 		Iterate through initial board state
+* 		For each checkers piece:
+* 			Find all legal moves for that piece
+* 			Create states for each legal move and add those as children to this state
+* 			Continue until no more legal moves or states repeat 
+* 
+* 	To Generate Success States:
+* 		Foreach player piece:
+* 			Generate success state with other pieces adjacent to this piece
+* 
+* 	To Choose Move:
+* 		Search Tree for branch path with the largest number of possible paths to success states
+*/
+
+package checkers;
+
