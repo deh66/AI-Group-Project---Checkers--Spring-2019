@@ -16,3 +16,6 @@
 
 # Dan's Visual Studio Directory
 **/AI Group Project - Checkers/
+
+*.classpath
+*.project
