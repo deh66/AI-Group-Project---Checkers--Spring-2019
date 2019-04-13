@@ -31,3 +31,7 @@
 
 package checkers;
 
+public static void Test()
+{
+	MoveList 
+}

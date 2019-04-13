@@ -136,41 +136,60 @@ public class GameSearch {
      * Uses the "Minimax with alpha-beta cutoff" algorithm to find the best move
      * for a player. However, unlike the normal minimax algorithm, which
      * searches an already built game tree, this algorithm builds and evaluates
-     * the game tree concurrent ly.
+     * the game tree concurrently.
      */
     public static Board minimaxAB(Board board, int recursion, int player,
-            Board alpha, Board beta) {
-        if (recursion > 0) {
+            Board alpha, Board beta) 
+    {
+        if (recursion > 0) 
+        {
             MoveList validMoves = null;
             validMoves = findAllValidMoves(board, player);
-            if (validMoves.size() == 0) {
+            
+            if (validMoves.size() == 0) 
+            {
                 return board;
             }
+            
             MoveIterator iterator = validMoves.getIterator();
+            
             if (player == CheckerPosition.BLACK) {   // Black - min node.
-                while (iterator.hasNext()) {
+            	
+                while (iterator.hasNext()) 
+                {
                     Board nextBoard = minimaxAB(executeMove(iterator.next(), board),
                             recursion - 1, opponent(player),
                             alpha, beta);
                     beta = minBoard(beta, nextBoard);
-                    if (alpha.evaluate() >= beta.evaluate()) {
+                    
+                    if (alpha.evaluate() >= beta.evaluate()) 
+                    {
                         return alpha;
                     }
                 }
+                
                 return beta;
-            } else {      // White - max node.
-                while (iterator.hasNext()) {
+                
+            } 
+            else 
+            {      // White - max node.
+                while (iterator.hasNext()) 
+                {
                     Board nextBoard = minimaxAB(executeMove(iterator.next(), board),
                             recursion - 1, opponent(player),
                             alpha, beta);
                     alpha = maxBoard(alpha, nextBoard);
-                    if (alpha.evaluate() >= beta.evaluate()) {
+                    if (alpha.evaluate() >= beta.evaluate()) 
+                    {
                         return beta; //Cutoff. Return the best solution so far.
                     }
                 }
                 return alpha;
             }
-        } else {
+        } 
+        
+        else 
+        {
             return board;   // Recursion done -> leaf in game tree.
         }
     }
