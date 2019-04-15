@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" size="1514,863" id="ija.projekt.players.NetworkPlayer" metadata="uml2-1.0" initialized="true" tag="1000" key="32303037303533312D3130303020494A412D50726F6A656B742F64696D697472696A">
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.2" name="NetworkMan" location="330,405" size="149,261" id="ija.projekt.network/NetworkMan" runTimeClassModel="connect(),NetworkMan(ILjava.lang.String;),dispose(),receive(),created,send(Lija.projekt.basis.Step;),send(Ljava.lang.String;),name,addReceiveListener(Lija.projekt.players.NetworkPlayer.NetworkPlayerReceiveListener;),getOponentName(),addInitListener(Lija.projekt.players.NetworkPlayer.NetworkPlayerInitListener;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="100,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="created" id="ija.projekt.network/NetworkMan#created"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="name" id="ija.projekt.network/NetworkMan#name"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="126,162">
+      <children xsi:type="editmodel:MethodEditModel" name="NetworkMan" id="ija.projekt.network/NetworkMan#NetworkMan(ILjava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addInitListener" id="ija.projekt.network/NetworkMan#addInitListener(Lija.projekt.players.NetworkPlayer.NetworkPlayerInitListener;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addReceiveListener" id="ija.projekt.network/NetworkMan#addReceiveListener(Lija.projekt.players.NetworkPlayer.NetworkPlayerReceiveListener;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="connect" id="ija.projekt.network/NetworkMan#connect()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="dispose" id="ija.projekt.network/NetworkMan#dispose()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getOponentName" id="ija.projekt.network/NetworkMan#getOponentName()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="receive" id="ija.projekt.network/NetworkMan#receive()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="send" id="ija.projekt.network/NetworkMan#send(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="send" id="ija.projekt.network/NetworkMan#send(Lija.projekt.basis.Step;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.2/@sourceConnections.1" name="NetworkPlayerInitListener" location="297,30" size="206,117" id="ija.projekt.players.NetworkPlayer/NetworkPlayerInitListener" runTimeClassModel="accept(Ljava.lang.String;),errorHandler(Ljava.lang.String;),connected(Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="91,54">
+      <children xsi:type="editmodel:MethodEditModel" name="accept" id="ija.projekt.players.NetworkPlayer/NetworkPlayerInitListener#accept(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="connected" id="ija.projekt.players.NetworkPlayer/NetworkPlayerInitListener#connected(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="errorHandler" id="ija.projekt.players.NetworkPlayer/NetworkPlayerInitListener#errorHandler(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="NetworkPlayer" location="68,377" size="160,319" id="ija.projekt.players.NetworkPlayer/NetworkPlayer" runTimeClassModel="NetworkPlayer(Z),dispose(),setAccepted(),getNameFromNetwork(),connected(Ljava.lang.String;),received(Lija.projekt.basis.Step;),yourTurn(),accept(Ljava.lang.String;),connect(),NetworkPlayer(Lija.projekt.players.NetworkPlayer.NetworkPlayer;),errorHandler(Ljava.lang.String;),cancel(),getOponentName(),NetworkPlayer(ZLija.projekt.network.NetworkMan;),getLastError()">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="137,270">
+      <children xsi:type="editmodel:MethodEditModel" name="NetworkPlayer" id="ija.projekt.players.NetworkPlayer/NetworkPlayer#NetworkPlayer(Lija.projekt.players.NetworkPlayer.NetworkPlayer;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="NetworkPlayer" id="ija.projekt.players.NetworkPlayer/NetworkPlayer#NetworkPlayer(ZLija.projekt.network.NetworkMan;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="NetworkPlayer" id="ija.projekt.players.NetworkPlayer/NetworkPlayer#NetworkPlayer(Z)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="accept" id="ija.projekt.players.NetworkPlayer/NetworkPlayer#accept(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="cancel" id="ija.projekt.players.NetworkPlayer/NetworkPlayer#cancel()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="connect" id="ija.projekt.players.NetworkPlayer/NetworkPlayer#connect()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="connected" id="ija.projekt.players.NetworkPlayer/NetworkPlayer#connected(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="dispose" id="ija.projekt.players.NetworkPlayer/NetworkPlayer#dispose()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="errorHandler" id="ija.projekt.players.NetworkPlayer/NetworkPlayer#errorHandler(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLastError" id="ija.projekt.players.NetworkPlayer/NetworkPlayer#getLastError()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getNameFromNetwork" id="ija.projekt.players.NetworkPlayer/NetworkPlayer#getNameFromNetwork()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getOponentName" id="ija.projekt.players.NetworkPlayer/NetworkPlayer#getOponentName()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="received" id="ija.projekt.players.NetworkPlayer/NetworkPlayer#received(Lija.projekt.basis.Step;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setAccepted" id="ija.projekt.players.NetworkPlayer/NetworkPlayer#setAccepted()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="yourTurn" id="ija.projekt.players.NetworkPlayer/NetworkPlayer#yourTurn()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="ija.projekt.players.NetworkPlayer/NetworkPlayerReceiveListener&lt;-ija.projekt.players.NetworkPlayer/NetworkPlayer" source="//@children.2" target="//@children.3" targetEnd="//@children.2/@sourceConnections.0/@children.1" sourceEnd="//@children.2/@sourceConnections.0/@children.0" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="80,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="118,99"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="ija.projekt.players.NetworkPlayer/NetworkPlayerInitListener&lt;-ija.projekt.players.NetworkPlayer/NetworkPlayer" source="//@children.2" target="//@children.1" targetEnd="//@children.2/@sourceConnections.1/@children.1" sourceEnd="//@children.2/@sourceConnections.1/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="160,10" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="10,117" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ija.projekt.network/NetworkMan@nm+ija.projekt.players.NetworkPlayer/NetworkPlayer@" source="//@children.2" target="//@children.0" targetEnd="//@children.2/@sourceConnections.2/@children.2" label="//@children.2/@sourceConnections.2/@children.0" sourceEnd="//@children.2/@sourceConnections.2/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="160,158" id="ija.projekt.network/NetworkMan@nm+ija.projekt.players.NetworkPlayer/NetworkPlayer@|ija.projekt.players.NetworkPlayer/NetworkPlayer#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="nm" location="0,130" id="ija.projekt.network/NetworkMan@nm+ija.projekt.players.NetworkPlayer/NetworkPlayer@|ija.projekt.network/NetworkMan#nm" multiplicityLabel="//@children.2/@sourceConnections.2/@children.2/@children.1" roleLabel="//@children.2/@sourceConnections.2/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" # nm" location="297,514" size="26,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="305,542" size="18,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.2/@sourceConnections.0" name="NetworkPlayerReceiveListener" location="30,30" size="237,99" id="ija.projekt.players.NetworkPlayer/NetworkPlayerReceiveListener" runTimeClassModel="errorHandler(Ljava.lang.String;),received(Lija.projekt.basis.Step;)">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="91,36">
+      <children xsi:type="editmodel:MethodEditModel" name="errorHandler" id="ija.projekt.players.NetworkPlayer/NetworkPlayerReceiveListener#errorHandler(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="received" id="ija.projekt.players.NetworkPlayer/NetworkPlayerReceiveListener#received(Lija.projekt.basis.Step;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" properties="wireOptions=3;Product=eUML2" autoName="false"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>

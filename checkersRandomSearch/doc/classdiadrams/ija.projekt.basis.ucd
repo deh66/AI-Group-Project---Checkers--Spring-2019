@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" size="1497,1441" id="ija.projekt.basis" metadata="uml2-1.0" initialized="true" tag="1000" key="32303037303533312D3130303020494A412D50726F6A656B742F64696D697472696A">
+  <children xsi:type="editmodel:ClassEditModel" name="Desk" location="35,432" size="146,175" id="ija.projekt.basis/Desk" runTimeClassModel="endLetter,Desk(I),getDimension(),Desk(Lija.projekt.basis.Desk;),getFigureAt(CI),getPositionAt(CI),sTART_LETTER">
+    <children xsi:type="editmodel:CompartmentEditModel" size="123,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="endLetter" id="ija.projekt.basis/Desk#endLetter"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="sTART_LETTER" id="ija.projekt.basis/Desk#sTART_LETTER"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="94,90">
+      <children xsi:type="editmodel:MethodEditModel" name="Desk" id="ija.projekt.basis/Desk#Desk(Lija.projekt.basis.Desk;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Desk" id="ija.projekt.basis/Desk#Desk(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDimension" id="ija.projekt.basis/Desk#getDimension()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getFigureAt" id="ija.projekt.basis/Desk#getFigureAt(CI)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPositionAt" id="ija.projekt.basis/Desk#getPositionAt(CI)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ija.projekt.basis/Desk@desk+ija.projekt.basis/Position@" source="//@children.0" target="//@children.1" targetEnd="//@children.0/@sourceConnections.0/@children.2" label="//@children.0/@sourceConnections.0/@children.0" sourceEnd="//@children.0/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="desk" location="146,87" id="ija.projekt.basis/Desk@desk+ija.projekt.basis/Position@|ija.projekt.basis/Desk#desk" attachSource="true" multiplicityLabel="//@children.0/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.0/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" # desk" location="188,498" size="35,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="188,526" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,159" id="ija.projekt.basis/Desk@desk+ija.projekt.basis/Position@|ija.projekt.basis/Position#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ija.projekt.basis/Position@pos+ija.projekt.basis/Desk@" source="//@children.0" target="//@children.1" targetEnd="//@children.0/@sourceConnections.1/@children.2" label="//@children.0/@sourceConnections.1/@children.0" sourceEnd="//@children.0/@sourceConnections.1/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="146,118" id="ija.projekt.basis/Position@pos+ija.projekt.basis/Desk@|ija.projekt.basis/Desk#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="pos" location="0,182" id="ija.projekt.basis/Position@pos+ija.projekt.basis/Desk@|ija.projekt.basis/Position#pos" multiplicityLabel="//@children.0/@sourceConnections.1/@children.2/@children.1" roleLabel="//@children.0/@sourceConnections.1/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" # pos" location="263,521" size="30,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="289,549" size="4,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.0/@sourceConnections.0 //@children.0/@sourceConnections.1" name="Position" location="300,360" size="127,517" id="ija.projekt.basis/Position" runTimeClassModel="Position(Lija.projekt.basis.Desk;CIZ),select(),getRealRow(I),getImagCol(I),sameColumn(Lija.projekt.basis.Position;),getRealRow(),putFigure(Lija.projekt.basis.Figure;),toString(),unSelect(),selected,getImagRow(),nextPosition(II),Position(Lija.projekt.basis.Position;Lija.projekt.basis.Desk;),getRealCol(),sameRow(Lija.projekt.basis.Position;),equals(Ljava.lang.Object;),removeFigure(),getRealCol(C),white,getFigure(),Position(CI),getImagCol(),getImagRow(I),hashCode(),draw(Ljava.awt.Graphics;IIII),isBlack()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="104,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="selected" id="ija.projekt.basis/Position#selected"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="white" id="ija.projekt.basis/Position#white"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="96,432">
+      <children xsi:type="editmodel:MethodEditModel" name="Position" id="ija.projekt.basis/Position#Position(Lija.projekt.basis.Position;Lija.projekt.basis.Desk;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Position" id="ija.projekt.basis/Position#Position(CI)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Position" id="ija.projekt.basis/Position#Position(Lija.projekt.basis.Desk;CIZ)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="draw" id="ija.projekt.basis/Position#draw(Ljava.awt.Graphics;IIII)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="equals" id="ija.projekt.basis/Position#equals(Ljava.lang.Object;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getFigure" id="ija.projekt.basis/Position#getFigure()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getImagCol" id="ija.projekt.basis/Position#getImagCol(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getImagCol" id="ija.projekt.basis/Position#getImagCol()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getImagRow" id="ija.projekt.basis/Position#getImagRow(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getImagRow" id="ija.projekt.basis/Position#getImagRow()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getRealCol" id="ija.projekt.basis/Position#getRealCol(C)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getRealCol" id="ija.projekt.basis/Position#getRealCol()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getRealRow" id="ija.projekt.basis/Position#getRealRow()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getRealRow" id="ija.projekt.basis/Position#getRealRow(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="hashCode" id="ija.projekt.basis/Position#hashCode()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isBlack" id="ija.projekt.basis/Position#isBlack()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="nextPosition" id="ija.projekt.basis/Position#nextPosition(II)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="putFigure" id="ija.projekt.basis/Position#putFigure(Lija.projekt.basis.Figure;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="removeFigure" id="ija.projekt.basis/Position#removeFigure()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="sameColumn" id="ija.projekt.basis/Position#sameColumn(Lija.projekt.basis.Position;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="sameRow" id="ija.projekt.basis/Position#sameRow(Lija.projekt.basis.Position;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="select" id="ija.projekt.basis/Position#select()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="ija.projekt.basis/Position#toString()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="unSelect" id="ija.projekt.basis/Position#unSelect()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ija.projekt.basis/Figure@f+ija.projekt.basis/Position@" source="//@children.1" target="//@children.4" targetEnd="//@children.1/@sourceConnections.0/@children.2" label="//@children.1/@sourceConnections.0/@children.0" sourceEnd="//@children.1/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="55,0" id="ija.projekt.basis/Figure@f+ija.projekt.basis/Position@|ija.projekt.basis/Position#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="f" location="70,229" id="ija.projekt.basis/Figure@f+ija.projekt.basis/Position@|ija.projekt.basis/Figure#f" multiplicityLabel="//@children.1/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.1/@sourceConnections.0/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" # f" location="332,266" size="16,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="362,266" size="18,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ija.projekt.basis/Position@p+ija.projekt.basis/Figure@" source="//@children.1" target="//@children.4" targetEnd="//@children.1/@sourceConnections.1/@children.2" label="//@children.1/@sourceConnections.1/@children.0" sourceEnd="//@children.1/@sourceConnections.1/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="p" location="20,0" id="ija.projekt.basis/Position@p+ija.projekt.basis/Figure@|ija.projekt.basis/Position#p" attachSource="true" multiplicityLabel="//@children.1/@sourceConnections.1/@children.1/@children.1" roleLabel="//@children.1/@sourceConnections.1/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" # p" location="295,339" size="18,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="327,339" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="37,229" id="ija.projekt.basis/Position@p+ija.projekt.basis/Figure@|ija.projekt.basis/Figure#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ija.projekt.basis/Position@to+ija.projekt.basis/Step@" source="//@children.1" target="//@children.3" targetEnd="//@children.1/@sourceConnections.2/@children.2" label="//@children.1/@sourceConnections.2/@children.0" sourceEnd="//@children.1/@sourceConnections.2/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="to" location="127,162" id="ija.projekt.basis/Position@to+ija.projekt.basis/Step@|ija.projekt.basis/Position#to" attachSource="true" multiplicityLabel="//@children.1/@sourceConnections.2/@children.1/@children.1" roleLabel="//@children.1/@sourceConnections.2/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" # to" location="434,501" size="21,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="434,529" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,132" id="ija.projekt.basis/Position@to+ija.projekt.basis/Step@|ija.projekt.basis/Step#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ija.projekt.basis/Position@from+ija.projekt.basis/Step@" source="//@children.1" target="//@children.3" targetEnd="//@children.1/@sourceConnections.3/@children.2" label="//@children.1/@sourceConnections.3/@children.0" sourceEnd="//@children.1/@sourceConnections.3/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="from" location="127,120" id="ija.projekt.basis/Position@from+ija.projekt.basis/Step@|ija.projekt.basis/Position#from" attachSource="true" multiplicityLabel="//@children.1/@sourceConnections.3/@children.1/@children.1" roleLabel="//@children.1/@sourceConnections.3/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" # from" location="434,459" size="34,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="434,487" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,112" id="ija.projekt.basis/Position@from+ija.projekt.basis/Step@|ija.projekt.basis/Step#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ija.projekt.basis/Position@x+ija.projekt.basis/Step@" source="//@children.1" target="//@children.3" targetEnd="//@children.1/@sourceConnections.4/@children.2" label="//@children.1/@sourceConnections.4/@children.0" sourceEnd="//@children.1/@sourceConnections.4/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="x" location="127,204" id="ija.projekt.basis/Position@x+ija.projekt.basis/Step@|ija.projekt.basis/Position#x" attachSource="true" multiplicityLabel="//@children.1/@sourceConnections.4/@children.1/@children.1" roleLabel="//@children.1/@sourceConnections.4/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" # x" location="434,543" size="18,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="434,571" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,136" id="ija.projekt.basis/Position@x+ija.projekt.basis/Step@|ija.projekt.basis/Step#"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Round" location="570,105" size="118,157" id="ija.projekt.basis/Round" runTimeClassModel="getStepCount(),Round(Lija.projekt.basis.Round;Lija.projekt.game.Game;),parseRound(Ljava.lang.String;Lija.projekt.game.Game;),Round(I),n,toString()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="42,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="n" id="ija.projekt.basis/Round#n"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="95,90">
+      <children xsi:type="editmodel:MethodEditModel" name="Round" id="ija.projekt.basis/Round#Round(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Round" id="ija.projekt.basis/Round#Round(Lija.projekt.basis.Round;Lija.projekt.game.Game;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getStepCount" id="ija.projekt.basis/Round#getStepCount()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="parseRound" id="ija.projekt.basis/Round#parseRound(Ljava.lang.String;Lija.projekt.game.Game;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="ija.projekt.basis/Round#toString()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ija.projekt.basis/Step@step2+ija.projekt.basis/Round@" source="//@children.2" target="//@children.3" targetEnd="//@children.2/@sourceConnections.0/@children.2" label="//@children.2/@sourceConnections.0/@children.0" sourceEnd="//@children.2/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="88,157" id="ija.projekt.basis/Step@step2+ija.projekt.basis/Round@|ija.projekt.basis/Round#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="step2" location="28,0" id="ija.projekt.basis/Step@step2+ija.projekt.basis/Round@|ija.projekt.basis/Step#step2" multiplicityLabel="//@children.2/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.2/@sourceConnections.0/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" # step2" location="665,369" size="39,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="633,369" size="18,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ija.projekt.basis/Step@step1+ija.projekt.basis/Round@" source="//@children.2" target="//@children.3" targetEnd="//@children.2/@sourceConnections.1/@children.2" label="//@children.2/@sourceConnections.1/@children.0" sourceEnd="//@children.2/@sourceConnections.1/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="108,157" id="ija.projekt.basis/Step@step1+ija.projekt.basis/Round@|ija.projekt.basis/Round#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="step1" location="120,0" id="ija.projekt.basis/Step@step1+ija.projekt.basis/Round@|ija.projekt.basis/Step#step1" multiplicityLabel="//@children.2/@sourceConnections.1/@children.2/@children.1" roleLabel="//@children.2/@sourceConnections.1/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" # step1" location="757,369" size="39,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="725,369" size="18,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.2 //@children.1/@sourceConnections.3 //@children.1/@sourceConnections.4 //@children.2/@sourceConnections.0 //@children.2/@sourceConnections.1" name="Step" location="630,390" size="196,265" id="ija.projekt.basis/Step" runTimeClassModel="getReadedSeparator(),isFromFigureWhite(),readedSeparator,equals(Ljava.lang.Object;),pOSITION_X_SEPARATOR,Step(Lija.projekt.basis.Position;Lija.projekt.basis.Position;Lija.projekt.basis.Position;),setX(Lija.projekt.basis.Position;),parseStep(Ljava.lang.String;Lija.projekt.game.Game;),pOSITION_SEPARATOR,Step(Lija.projekt.basis.Step;Lija.projekt.game.Game;),toString(),Step(Lija.projekt.basis.Position;Lija.projekt.basis.Position;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="173,54">
+      <children xsi:type="editmodel:AttributeEditModel" name="pOSITION_SEPARATOR" id="ija.projekt.basis/Step#pOSITION_SEPARATOR"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="pOSITION_X_SEPARATOR" id="ija.projekt.basis/Step#pOSITION_X_SEPARATOR"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="readedSeparator" id="ija.projekt.basis/Step#readedSeparator"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="130,162">
+      <children xsi:type="editmodel:MethodEditModel" name="Step" id="ija.projekt.basis/Step#Step(Lija.projekt.basis.Position;Lija.projekt.basis.Position;Lija.projekt.basis.Position;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Step" id="ija.projekt.basis/Step#Step(Lija.projekt.basis.Position;Lija.projekt.basis.Position;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Step" id="ija.projekt.basis/Step#Step(Lija.projekt.basis.Step;Lija.projekt.game.Game;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="equals" id="ija.projekt.basis/Step#equals(Ljava.lang.Object;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getReadedSeparator" id="ija.projekt.basis/Step#getReadedSeparator()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isFromFigureWhite" id="ija.projekt.basis/Step#isFromFigureWhite()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="parseStep" id="ija.projekt.basis/Step#parseStep(Ljava.lang.String;Lija.projekt.game.Game;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setX" id="ija.projekt.basis/Step#setX(Lija.projekt.basis.Position;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="ija.projekt.basis/Step#toString()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.0 //@children.1/@sourceConnections.1" name="Figure" location="285,30" size="126,229" id="ija.projekt.basis/Figure" runTimeClassModel="Figure(Lija.projekt.basis.Position;Z),removePosition(),white,getPosition(),canMove(Lija.projekt.basis.Position;),getSteps(),draw(Ljava.awt.Graphics;IIII),Figure(Lija.projekt.basis.Figure;Lija.projekt.basis.Position;),isBlack(),move(Lija.projekt.basis.Position;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="90,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="white" id="ija.projekt.basis/Figure#white"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="103,162">
+      <children xsi:type="editmodel:MethodEditModel" name="Figure" id="ija.projekt.basis/Figure#Figure(Lija.projekt.basis.Position;Z)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Figure" id="ija.projekt.basis/Figure#Figure(Lija.projekt.basis.Figure;Lija.projekt.basis.Position;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="canMove" id="ija.projekt.basis/Figure#canMove(Lija.projekt.basis.Position;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="draw" id="ija.projekt.basis/Figure#draw(Ljava.awt.Graphics;IIII)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPosition" id="ija.projekt.basis/Figure#getPosition()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSteps" id="ija.projekt.basis/Figure#getSteps()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isBlack" id="ija.projekt.basis/Figure#isBlack()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="move" id="ija.projekt.basis/Figure#move(Lija.projekt.basis.Position;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="removePosition" id="ija.projekt.basis/Figure#removePosition()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" properties="wireOptions=3;Product=eUML2" autoName="false"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>

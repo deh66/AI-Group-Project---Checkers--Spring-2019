@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" size="2031,1151" id="ija.projekt.game" metadata="uml2-1.0" initialized="true" zoom="0.75" tag="1000" key="32303037303533312D3130303020494A412D50726F6A656B742F64696D697472696A">
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.5/@sourceConnections.4" name="Log" location="44,329" size="120,193" id="ija.projekt.game/Log" runTimeClassModel="add(Lija.projekt.basis.Step;),clear(),getLastRound(),getLastStep(),getLog(),getSteps(),Log(),Log(Lija.projekt.game.Log;Lija.projekt.game.Game;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="97,144">
+      <children xsi:type="editmodel:MethodEditModel" name="Log" id="ija.projekt.game/Log#Log(Lija.projekt.game.Log;Lija.projekt.game.Game;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Log" id="ija.projekt.game/Log#Log()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="add" id="ija.projekt.game/Log#add(Lija.projekt.basis.Step;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="clear" id="ija.projekt.game/Log#clear()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLastRound" id="ija.projekt.game/Log#getLastRound()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLastStep" id="ija.projekt.game/Log#getLastStep()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLog" id="ija.projekt.game/Log#getLog()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSteps" id="ija.projekt.game/Log#getSteps()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.5/@sourceConnections.0" name="IFileLog" location="56,79" size="94,113" id="ija.projekt.log/IFileLog" runTimeClassModel="save(Ljava.io.File;Lija.projekt.game.Game;),open(Ljava.io.File;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="54,36">
+      <children xsi:type="editmodel:MethodEditModel" name="open" id="ija.projekt.log/IFileLog#open(Ljava.io.File;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="save" id="ija.projekt.log/IFileLog#save(Ljava.io.File;Lija.projekt.game.Game;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.5/@sourceConnections.3" name="Desk" location="-6,828" size="146,189" id="ija.projekt.basis/Desk" runTimeClassModel="endLetter,Desk(I),getDimension(),Desk(Lija.projekt.basis.Desk;),getFigureAt(CI),getPositionAt(CI),sTART_LETTER">
+    <children xsi:type="editmodel:CompartmentEditModel" size="123,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="endLetter" id="ija.projekt.basis/Desk#endLetter"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="sTART_LETTER" id="ija.projekt.basis/Desk#sTART_LETTER"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="94,90">
+      <children xsi:type="editmodel:MethodEditModel" name="Desk" id="ija.projekt.basis/Desk#Desk(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Desk" id="ija.projekt.basis/Desk#Desk(Lija.projekt.basis.Desk;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDimension" id="ija.projekt.basis/Desk#getDimension()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getFigureAt" id="ija.projekt.basis/Desk#getFigureAt(CI)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPositionAt" id="ija.projekt.basis/Desk#getPositionAt(CI)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.5/@sourceConnections.1 //@children.5/@sourceConnections.5 //@children.5/@sourceConnections.6 //@children.5/@sourceConnections.8" name="Player" location="776,164" size="144,283" id="ija.projekt.game/Player" runTimeClassModel="dispose(),setGame(Lija.projekt.game.Game;),white,isInteractive,yourTurn(),toString(),getGame(),doMove(Lija.projekt.basis.Position;Lija.projekt.basis.Position;),doMove(Lija.projekt.basis.Step;),name,Player(Z),Player(Lija.projekt.game.Player;),isBlack()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="121,54">
+      <children xsi:type="editmodel:AttributeEditModel" name="isInteractive" id="ija.projekt.game/Player#isInteractive"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="name" id="ija.projekt.game/Player#name"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="white" id="ija.projekt.game/Player#white"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="74,180">
+      <children xsi:type="editmodel:MethodEditModel" name="Player" id="ija.projekt.game/Player#Player(Z)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Player" id="ija.projekt.game/Player#Player(Lija.projekt.game.Player;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="dispose" id="ija.projekt.game/Player#dispose()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="doMove" id="ija.projekt.game/Player#doMove(Lija.projekt.basis.Step;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="doMove" id="ija.projekt.game/Player#doMove(Lija.projekt.basis.Position;Lija.projekt.basis.Position;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getGame" id="ija.projekt.game/Player#getGame()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isBlack" id="ija.projekt.game/Player#isBlack()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setGame" id="ija.projekt.game/Player#setGame(Lija.projekt.game.Game;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="ija.projekt.game/Player#toString()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="yourTurn" id="ija.projekt.game/Player#yourTurn()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="ija.projekt.gui.GuiUpdate/GuiUpdate&lt;-ija.projekt.game/Player" source="//@children.3" target="//@children.5/@sourceConnections.7" targetEnd="//@children.3/@sourceConnections.0/@children.1" sourceEnd="//@children.3/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="72,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.5/@sourceConnections.7" name="GuiUpdate" location="525,15" size="138,99" id="ija.projekt.gui.GuiUpdate/GuiUpdate" runTimeClassModel="refreshGui(),addListener(Lija.projekt.gui.GuiUpdate.GuiUpdateListener;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="87,36">
+      <children xsi:type="editmodel:MethodEditModel" name="addListener" id="ija.projekt.gui.GuiUpdate/GuiUpdate#addListener(Lija.projekt.gui.GuiUpdate.GuiUpdateListener;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="refreshGui" id="ija.projekt.gui.GuiUpdate/GuiUpdate#refreshGui()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Game" location="240,191" size="185,798" id="ija.projekt.game/Game" runTimeClassModel="getPositionAt(Lija.projekt.basis.Position;),ija.projekt.game.Game.StepStatus,getEndLetter(),getSteps(),getWinner(),save(Ljava.io.File;),toString(),checkRook(),open(Ljava.io.File;Lija.projekt.log.IFileLog;),Game(Lija.projekt.game.Game;),setDirty(Z),switchPlayer(),addRound(Lija.projekt.basis.Round;),getPositionAt(CI),getStepCount(),dispose(),getLastRound(),isDirty(),isNewRook(Z),getLastStep(),start(),getFinished(),finished,canDoStep(Lija.projekt.basis.Step;Lija.projekt.game.Player;),setCurrentPlayer(),getRounds(),Game(Lija.projekt.game.Player;Lija.projekt.game.Player;),doMove(Lija.projekt.basis.Position;Lija.projekt.basis.Position;),reset(),setFileType(Lija.projekt.log.IFileLog;),getDeskDimension(),addStep(Lija.projekt.basis.Step;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="101,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="finished" id="ija.projekt.game/Game#finished"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="118,540">
+      <children xsi:type="editmodel:MethodEditModel" name="Game" id="ija.projekt.game/Game#Game(Lija.projekt.game.Player;Lija.projekt.game.Player;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Game" id="ija.projekt.game/Game#Game(Lija.projekt.game.Game;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addRound" id="ija.projekt.game/Game#addRound(Lija.projekt.basis.Round;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addStep" id="ija.projekt.game/Game#addStep(Lija.projekt.basis.Step;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="canDoStep" id="ija.projekt.game/Game#canDoStep(Lija.projekt.basis.Step;Lija.projekt.game.Player;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="checkRook" id="ija.projekt.game/Game#checkRook()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="dispose" id="ija.projekt.game/Game#dispose()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="doMove" id="ija.projekt.game/Game#doMove(Lija.projekt.basis.Position;Lija.projekt.basis.Position;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDeskDimension" id="ija.projekt.game/Game#getDeskDimension()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getEndLetter" id="ija.projekt.game/Game#getEndLetter()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getFinished" id="ija.projekt.game/Game#getFinished()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLastRound" id="ija.projekt.game/Game#getLastRound()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLastStep" id="ija.projekt.game/Game#getLastStep()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPositionAt" id="ija.projekt.game/Game#getPositionAt(Lija.projekt.basis.Position;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPositionAt" id="ija.projekt.game/Game#getPositionAt(CI)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getRounds" id="ija.projekt.game/Game#getRounds()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getStepCount" id="ija.projekt.game/Game#getStepCount()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSteps" id="ija.projekt.game/Game#getSteps()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getWinner" id="ija.projekt.game/Game#getWinner()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isDirty" id="ija.projekt.game/Game#isDirty()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isNewRook" id="ija.projekt.game/Game#isNewRook(Z)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="open" id="ija.projekt.game/Game#open(Ljava.io.File;Lija.projekt.log.IFileLog;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="reset" id="ija.projekt.game/Game#reset()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="save" id="ija.projekt.game/Game#save(Ljava.io.File;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setCurrentPlayer" id="ija.projekt.game/Game#setCurrentPlayer()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setDirty" id="ija.projekt.game/Game#setDirty(Z)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setFileType" id="ija.projekt.game/Game#setFileType(Lija.projekt.log.IFileLog;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="start" id="ija.projekt.game/Game#start()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="switchPlayer" id="ija.projekt.game/Game#switchPlayer()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="ija.projekt.game/Game#toString()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="162,181">
+      <children xsi:type="editmodel:EnumerationEditModel" targetConnections="//@children.5/@sourceConnections.2" name="StepStatus" location="4539,3911" size="162,179" id="ija.projekt.game/Game$StepStatus" runTimeClassModel="POS_FIG_NULL%,CANT_MOVE%,NOT_CURRENT_PLAYER%,OK%,NOT_DEFINED%,MUST_MOVE%,NO_FIGURE%">
+        <children xsi:type="editmodel:CompartmentEditModel" size="139,126">
+          <children xsi:type="editmodel:EnumerationLiteralEditModel" name="NOT_CURRENT_PLAYER" id="ija.projekt.game/Game$StepStatus#NOT_CURRENT_PLAYER%"/>
+          <children xsi:type="editmodel:EnumerationLiteralEditModel" name="CANT_MOVE" id="ija.projekt.game/Game$StepStatus#CANT_MOVE%"/>
+          <children xsi:type="editmodel:EnumerationLiteralEditModel" name="OK" id="ija.projekt.game/Game$StepStatus#OK%"/>
+          <children xsi:type="editmodel:EnumerationLiteralEditModel" name="MUST_MOVE" id="ija.projekt.game/Game$StepStatus#MUST_MOVE%"/>
+          <children xsi:type="editmodel:EnumerationLiteralEditModel" name="NO_FIGURE" id="ija.projekt.game/Game$StepStatus#NO_FIGURE%"/>
+          <children xsi:type="editmodel:EnumerationLiteralEditModel" name="NOT_DEFINED" id="ija.projekt.game/Game$StepStatus#NOT_DEFINED%"/>
+          <children xsi:type="editmodel:EnumerationLiteralEditModel" name="POS_FIG_NULL" id="ija.projekt.game/Game$StepStatus#POS_FIG_NULL%"/>
+        </children>
+        <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+      </children>
+    </children>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ija.projekt.log/IFileLog@file+ija.projekt.game/Game@" source="//@children.5" target="//@children.1" targetEnd="//@children.5/@sourceConnections.0/@children.2" label="//@children.5/@sourceConnections.0/@children.0" sourceEnd="//@children.5/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="10,0" id="ija.projekt.log/IFileLog@file+ija.projekt.game/Game@|ija.projekt.game/Game#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="file" location="94,103" id="ija.projekt.log/IFileLog@file+ija.projekt.game/Game@|ija.projekt.log/IFileLog#file" multiplicityLabel="//@children.5/@sourceConnections.0/@children.2/@children.1" roleLabel="//@children.5/@sourceConnections.0/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" # file" location="156,160" size="26,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="156,188" size="18,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ija.projekt.game/Player@player1+ija.projekt.game/Game@" source="//@children.5" target="//@children.3" targetEnd="//@children.5/@sourceConnections.1/@children.2" label="//@children.5/@sourceConnections.1/@children.0" sourceEnd="//@children.5/@sourceConnections.1/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="185,128" id="ija.projekt.game/Player@player1+ija.projekt.game/Game@|ija.projekt.game/Game#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="player1" location="0,155" id="ija.projekt.game/Player@player1+ija.projekt.game/Game@|ija.projekt.game/Player#player1" multiplicityLabel="//@children.5/@sourceConnections.1/@children.2/@children.1" roleLabel="//@children.5/@sourceConnections.1/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" # player1" location="721,297" size="48,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="751,325" size="18,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="ija.projekt.game/Game$StepStatus@lastStepStatus+ija.projekt.game/Game@" source="//@children.5" target="//@children.5/@children.2/@children.0" targetEnd="//@children.5/@sourceConnections.2/@children.2" label="//@children.5/@sourceConnections.2/@children.0" sourceEnd="//@children.5/@sourceConnections.2/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="185,788" id="ija.projekt.game/Game$StepStatus@lastStepStatus+ija.projekt.game/Game@|ija.projekt.game/Game#" attachSource="true" roleLabel="//@children.5/@sourceConnections.2/@children.1/@children.0">
+        <children xsi:type="editmodel:LabelEditModel" location="431,957" size="0,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="lastStepStatus" location="162,29" id="ija.projekt.game/Game$StepStatus@lastStepStatus+ija.projekt.game/Game@|ija.projekt.game/Game$StepStatus#lastStepStatus" multiplicityLabel="//@children.5/@sourceConnections.2/@children.2/@children.1" roleLabel="//@children.5/@sourceConnections.2/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" # lastStepStatus" location="419,807" size="82,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="419,835" size="18,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ija.projekt.basis/Desk@desk+ija.projekt.game/Game@" source="//@children.5" target="//@children.2" targetEnd="//@children.5/@sourceConnections.3/@children.2" label="//@children.5/@sourceConnections.3/@children.0" sourceEnd="//@children.5/@sourceConnections.3/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,717" id="ija.projekt.basis/Desk@desk+ija.projekt.game/Game@|ija.projekt.game/Game#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="desk" location="146,80" id="ija.projekt.basis/Desk@desk+ija.projekt.game/Game@|ija.projekt.basis/Desk#desk" multiplicityLabel="//@children.5/@sourceConnections.3/@children.2/@children.1" roleLabel="//@children.5/@sourceConnections.3/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" # desk" location="147,887" size="35,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="147,915" size="18,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ija.projekt.game/Log@log+ija.projekt.game/Game@" source="//@children.5" target="//@children.0" targetEnd="//@children.5/@sourceConnections.4/@children.2" label="//@children.5/@sourceConnections.4/@children.0" sourceEnd="//@children.5/@sourceConnections.4/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,234" id="ija.projekt.game/Log@log+ija.projekt.game/Game@|ija.projekt.game/Game#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="log" location="120,96" id="ija.projekt.game/Log@log+ija.projekt.game/Game@|ija.projekt.game/Log#log" multiplicityLabel="//@children.5/@sourceConnections.4/@children.2/@children.1" roleLabel="//@children.5/@sourceConnections.4/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" # log" location="171,403" size="26,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="171,431" size="18,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ija.projekt.game/Player@currentPlayer+ija.projekt.game/Game@" source="//@children.5" target="//@children.3" targetEnd="//@children.5/@sourceConnections.5/@children.2" label="//@children.5/@sourceConnections.5/@children.0" sourceEnd="//@children.5/@sourceConnections.5/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="185,148" id="ija.projekt.game/Player@currentPlayer+ija.projekt.game/Game@|ija.projekt.game/Game#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="currentPlayer" location="0,197" id="ija.projekt.game/Player@currentPlayer+ija.projekt.game/Game@|ija.projekt.game/Player#currentPlayer" multiplicityLabel="//@children.5/@sourceConnections.5/@children.2/@children.1" roleLabel="//@children.5/@sourceConnections.5/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" # currentPlayer" location="692,367" size="77,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="751,339" size="18,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="ija.projekt.game/Game@game+ija.projekt.game/Player@" source="//@children.5" target="//@children.3" targetEnd="//@children.5/@sourceConnections.6/@children.2" label="//@children.5/@sourceConnections.6/@children.0" sourceEnd="//@children.5/@sourceConnections.6/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="game" location="185,97" id="ija.projekt.game/Game@game+ija.projekt.game/Player@|ija.projekt.game/Game#game" attachSource="true" multiplicityLabel="//@children.5/@sourceConnections.6/@children.1/@children.1" roleLabel="//@children.5/@sourceConnections.6/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" # game" location="431,267" size="38,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="431,295" size="18,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,124" id="ija.projekt.game/Game@game+ija.projekt.game/Player@|ija.projekt.game/Player#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.3/@sourceConnections.0" autoLocated="true" id="ija.projekt.gui.GuiUpdate/GuiUpdate&lt;-ija.projekt.game/Game" source="//@children.5" target="//@children.4" targetEnd="//@children.5/@sourceConnections.7/@children.1" sourceEnd="//@children.5/@sourceConnections.7/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="92,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="69,99" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="ija.projekt.game/Player@player2+ija.projekt.game/Game@" source="//@children.5" target="//@children.3" targetEnd="//@children.5/@sourceConnections.8/@children.2" label="//@children.5/@sourceConnections.8/@children.0" sourceEnd="//@children.5/@sourceConnections.8/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="184,190" id="ija.projekt.game/Player@player2+ija.projekt.game/Game@|ija.projekt.game/Game#" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="player2" location="0,248" id="ija.projekt.game/Player@player2+ija.projekt.game/Game@|ija.projekt.game/Player#player2" multiplicityLabel="//@children.5/@sourceConnections.8/@children.2/@children.1" roleLabel="//@children.5/@sourceConnections.8/@children.2/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" # player2" location="721,419" size="48,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="751,391" size="18,14" anchorKind="LastPart"/>
+      </children>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" properties="wireOptions=3;Product=eUML2" autoName="false"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>
