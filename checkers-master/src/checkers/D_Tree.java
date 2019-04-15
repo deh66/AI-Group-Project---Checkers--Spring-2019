@@ -1,3 +1,5 @@
+package checkers;
+
 /**
  * @file D_Tree.java
  * 
@@ -29,9 +31,25 @@
 * 		Search Tree for branch path with the largest number of possible paths to success states
 */
 
-package checkers;
-
-public static void Test()
+public class D_Tree extends GameSearch
 {
-	MoveList 
+	
+  public static Board decisionTree (Board gameBoard, int count, int player)
+  {
+	  MoveList moves = null;
+	  moves = findAllValidMoves(gameBoard, player);
+	  
+	  if (moves.size() == 0)
+	  {
+		  return gameBoard;
+	  }
+	  
+      MoveIterator iterator = moves.getIterator();
+      BoardList boardlist = new BoardList();
+  }
+  
+  public static Board createNode ()
+  {
+	  
+  }
 }

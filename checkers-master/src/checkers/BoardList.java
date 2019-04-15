@@ -60,9 +60,9 @@ public class BoardList {
       Board bestBoard = iterator.next();
       while (iterator.hasNext()) {
          if (color == CheckerPosition.WHITE) 
-            bestBoard = GameSearch.maxBoard(bestBoard, iterator.next());
+            bestBoard = Minimax.maxBoard(bestBoard, iterator.next());
          else 
-            bestBoard = GameSearch.minBoard(bestBoard, iterator.next());
+            bestBoard = Minimax.minBoard(bestBoard, iterator.next());
       }
       return bestBoard;   
    }

@@ -5,20 +5,25 @@ import java.io.Serializable;
 /** 
  * A linked list of moves.
  */
-public class MoveList implements Serializable{
+public class MoveList implements Serializable
+{
    private Move moveList;
    private Move last;
    private int listSize;
    
    
-   public MoveList() {
+   public MoveList() 
+   {
       listSize = 0;   
       moveList = null;
    }
 
 
-   public void add(Move c) {
-      if (moveList == null) { // first element.
+   public void add(Move c) 
+   {
+      if (moveList == null) 
+      {
+    	  // first element.
          moveList = c;
          last = c;
       }

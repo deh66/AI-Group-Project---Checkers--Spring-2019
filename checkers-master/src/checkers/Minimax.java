@@ -1,3 +1,5 @@
+package checkers;
+
 /**
  * @file Minimax.java
  * 
@@ -29,5 +31,34 @@
 * 		Search Tree for branch path with the largest number of possible paths to success states
 */
 
-package checkers;
+public class Minimax extends D_Tree
+{
 
+    // Returns the board with the smallest score.
+    public static Board minBoard(Board a, Board b) 
+    {
+        if (a.evaluate() <= b.evaluate()) 
+        {
+            return a;
+        } 
+        
+        else 
+        {
+            return b;
+        }
+    }
+
+    // Returns the board with the largest score.
+    public static Board maxBoard(Board a, Board b) 
+    {
+        if (a.evaluate() >= b.evaluate()) 
+        {
+            return a;
+        } 
+        
+        else 
+        {
+            return b;
+        }
+    }
+}
