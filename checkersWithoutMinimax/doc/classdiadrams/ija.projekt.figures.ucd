@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" size="1517,851" id="ija.projekt.figures" metadata="uml2-1.0" initialized="true" tag="1000" key="32303037303533312D3130303020494A412D50726F6A656B742F64696D697472696A">
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.0" name="Figure" location="105,45" size="126,243" id="ija.projekt.basis/Figure">
+    <children xsi:type="editmodel:CompartmentEditModel" size="90,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="white" id="ija.projekt.basis/Figure#white"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="103,162">
+      <children xsi:type="editmodel:MethodEditModel" name="Figure" id="ija.projekt.basis/Figure#Figure(Lija.projekt.basis.Position;Z)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Figure" id="ija.projekt.basis/Figure#Figure(Lija.projekt.basis.Figure;Lija.projekt.basis.Position;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="canMove" id="ija.projekt.basis/Figure#canMove(Lija.projekt.basis.Position;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="draw" id="ija.projekt.basis/Figure#draw(Ljava.awt.Graphics;IIII)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPosition" id="ija.projekt.basis/Figure#getPosition()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSteps" id="ija.projekt.basis/Figure#getSteps()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isBlack" id="ija.projekt.basis/Figure#isBlack()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="move" id="ija.projekt.basis/Figure#move(Lija.projekt.basis.Position;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="removePosition" id="ija.projekt.basis/Figure#removePosition()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Rook" location="177,343" size="97,139" id="ija.projekt.figures/Rook">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="74,90">
+      <children xsi:type="editmodel:MethodEditModel" name="Rook" id="ija.projekt.figures/Rook#Rook(Lija.projekt.figures.Rook;Lija.projekt.basis.Position;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Rook" id="ija.projekt.figures/Rook#Rook(Lija.projekt.basis.Position;Z)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="canMove" id="ija.projekt.figures/Rook#canMove(Lija.projekt.basis.Position;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="draw" id="ija.projekt.figures/Rook#draw(Ljava.awt.Graphics;IIII)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSteps" id="ija.projekt.figures/Rook#getSteps()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="ija.projekt.basis/Figure&lt;-ija.projekt.figures/Rook" source="//@children.1" target="//@children.2/@sourceConnections.0" targetEnd="//@children.1/@sourceConnections.0/@children.1" sourceEnd="//@children.1/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="48,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Pawn" location="50,343" size="97,139" id="ija.projekt.figures/Pawn">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="74,90">
+      <children xsi:type="editmodel:MethodEditModel" name="Pawn" id="ija.projekt.figures/Pawn#Pawn(Lija.projekt.basis.Position;Z)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Pawn" id="ija.projekt.figures/Pawn#Pawn(Lija.projekt.figures.Pawn;Lija.projekt.basis.Position;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="canMove" id="ija.projekt.figures/Pawn#canMove(Lija.projekt.basis.Position;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="draw" id="ija.projekt.figures/Pawn#draw(Ljava.awt.Graphics;IIII)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSteps" id="ija.projekt.figures/Pawn#getSteps()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.1/@sourceConnections.0" autoLocated="true" id="ija.projekt.basis/Figure&lt;-ija.projekt.figures/Pawn" source="//@children.2" target="//@children.0" targetEnd="//@children.2/@sourceConnections.0/@children.1" sourceEnd="//@children.2/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="48,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="63,243" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" properties="wireOptions=3;Product=eUML2" autoName="false"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>

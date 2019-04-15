@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" size="1996,1190" id="ija.projekt.log" metadata="uml2-1.0" initialized="true" zoom="0.75" tag="1000" key="32303037303533312D3130303020494A412D50726F6A656B742F64696D697472696A">
+  <children xsi:type="editmodel:ClassEditModel" name="BasicNotationLog" location="50,199" size="153,139" id="ija.projekt.log/BasicNotationLog" runTimeClassModel="setLog(Lija.projekt.game.Game;Ljava.lang.String;),save(Ljava.io.File;Lija.projekt.game.Game;),open(Ljava.io.File;),getLog(Lija.projekt.game.Game;),BasicNotationLog()">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="114,90">
+      <children xsi:type="editmodel:MethodEditModel" name="BasicNotationLog" id="ija.projekt.log/BasicNotationLog#BasicNotationLog()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLog" id="ija.projekt.log/BasicNotationLog#getLog(Lija.projekt.game.Game;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="open" id="ija.projekt.log/BasicNotationLog#open(Ljava.io.File;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="save" id="ija.projekt.log/BasicNotationLog#save(Ljava.io.File;Lija.projekt.game.Game;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setLog" id="ija.projekt.log/BasicNotationLog#setLog(Lija.projekt.game.Game;Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" autoLocated="true" id="ija.projekt.log/IFileLog&lt;-ija.projekt.log/BasicNotationLog" source="//@children.0" target="//@children.2" targetEnd="//@children.0/@sourceConnections.0/@children.1" sourceEnd="//@children.0/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="129,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="23,99" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="XMLLog" location="233,199" size="94,103" id="ija.projekt.log/XMLLog" runTimeClassModel="XMLLog(),save(Ljava.io.File;Lija.projekt.game.Game;),open(Ljava.io.File;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="69,54">
+      <children xsi:type="editmodel:MethodEditModel" name="XMLLog" id="ija.projekt.log/XMLLog#XMLLog()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="open" id="ija.projekt.log/XMLLog#open(Ljava.io.File;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="save" id="ija.projekt.log/XMLLog#save(Ljava.io.File;Lija.projekt.game.Game;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" id="ija.projekt.log/IFileLog&lt;-ija.projekt.log/XMLLog" source="//@children.1" target="//@children.2" targetEnd="//@children.1/@sourceConnections.0/@children.1" sourceEnd="//@children.1/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="47,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="40,98" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:InterfaceEditModel" targetConnections="//@children.0/@sourceConnections.0 //@children.1/@sourceConnections.0" name="IFileLog" location="156,50" size="94,99" id="ija.projekt.log/IFileLog" runTimeClassModel="save(Ljava.io.File;Lija.projekt.game.Game;),open(Ljava.io.File;)">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="54,36">
+      <children xsi:type="editmodel:MethodEditModel" name="open" id="ija.projekt.log/IFileLog#open(Ljava.io.File;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="save" id="ija.projekt.log/IFileLog#save(Ljava.io.File;Lija.projekt.game.Game;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" properties="wireOptions=3;Product=eUML2" autoName="false"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>
