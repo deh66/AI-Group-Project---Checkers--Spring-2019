@@ -1,0 +1,26 @@
+Testsuite: ija.projekt.test.UnitTest
+Tests run: 15, Failures: 1, Errors: 0, Time elapsed: 0.55 sec
+
+Testcase: test07 took 0.172 sec
+Testcase: test04 took 0.056 sec
+Testcase: test06 took 0.053 sec
+Testcase: test05 took 0.009 sec
+Testcase: test08 took 0.004 sec
+Testcase: test01 took 0.006 sec
+Testcase: test14 took 0.019 sec
+Testcase: test03 took 0.001 sec
+Testcase: test10 took 0.115 sec
+Testcase: test09 took 0.003 sec
+Testcase: test02 took 0.001 sec
+Testcase: test15 took 0.012 sec
+	FAILED
+White rook f6 can not move back to b2 jumping over c3 white pawn: Failed
+junit.framework.AssertionFailedError: White rook f6 can not move back to b2 jumping over c3 white pawn: Failed
+	at ija.projekt.test.UnitTest.test15(Unknown Source)
+	at org.eclipse.ant.internal.launching.remote.EclipseDefaultExecutor.executeTargets(EclipseDefaultExecutor.java:32)
+	at org.eclipse.ant.internal.launching.remote.InternalAntRunner.run(InternalAntRunner.java:424)
+	at org.eclipse.ant.internal.launching.remote.InternalAntRunner.main(InternalAntRunner.java:138)
+
+Testcase: test11 took 0.003 sec
+Testcase: test13 took 0.005 sec
+Testcase: test12 took 0.008 sec
