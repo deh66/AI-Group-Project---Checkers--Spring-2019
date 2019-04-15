@@ -3,6 +3,7 @@ package CheckersUI;
 import checkers.Board;
 import checkers.CheckerPosition;
 import checkers.Coordinate;
+import checkers.D_Tree;
 import checkers.Move;
 import checkers.MoveIterator;
 import checkers.MoveJump;
@@ -119,7 +120,7 @@ public class CheckersFrame extends JFrame implements MouseListener, MouseMotionL
         menuBar = new JMenuBar();
 
         // create Algorithmes menu item
-        JMenu algorithme = new JMenu("algorithmes");
+        JMenu algorithme = new JMenu("");
         ButtonGroup algorithmeGroup = new ButtonGroup(); // group for radio buttons
         
         JRadioButtonMenuItem rbMiniMax = new JRadioButtonMenuItem("MiniMax");        
@@ -130,7 +131,7 @@ public class CheckersFrame extends JFrame implements MouseListener, MouseMotionL
                 CheckersFrame.algorithme = 1;
             }
         });
-        JRadioButtonMenuItem rbMiniMaxAB = new JRadioButtonMenuItem("MiniMaxAB");
+        JRadioButtonMenuItem rbMiniMaxAB = new JRadioButtonMenuItem("");
         rbMiniMaxAB.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -172,7 +173,7 @@ public class CheckersFrame extends JFrame implements MouseListener, MouseMotionL
         mediumLevel.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                System.out.println("mediumLevel");
+                //System.out.println("mediumLevel");
                 
             }
         });
@@ -187,11 +188,11 @@ public class CheckersFrame extends JFrame implements MouseListener, MouseMotionL
         });
         // add radio buttons to the group, to check only one of them
         levelsGroup.add(hardLevel);
-        levelsGroup.add(mediumLevel);
+        //levelsGroup.add(mediumLevel);
         levelsGroup.add(easyLevel);
         
         levels.add(hardLevel);
-        levels.add(mediumLevel);
+        //levels.add(mediumLevel);
         levels.add(easyLevel);
         
         if(thinkDepth == 8){
@@ -317,10 +318,10 @@ public class CheckersFrame extends JFrame implements MouseListener, MouseMotionL
 
                     Board tmpBoard = null;
                     if (CheckersFrame.algorithme == 1) {
-                        tmpBoard = GameSearch.minimax(pan.boardO, thinkDepth, userColor);
-                    } else {
-                        tmpBoard = GameSearch.minimaxAB(pan.boardO, thinkDepth, userColor, GameSearch.minusInfinityBoard(), GameSearch.plusInfinityBoard());
-                    }
+                        tmpBoard = D_Tree.minimax(pan.boardO, thinkDepth, userColor);
+                    } //else {
+                        //tmpBoard = GameSearch.minimaxAB(pan.boardO, thinkDepth, userColor, GameSearch.minusInfinityBoard(), GameSearch.plusInfinityBoard());
+                    //}
 
                     Move move = tmpBoard.getHistory().first().getNext();
 
@@ -652,13 +653,13 @@ public class CheckersFrame extends JFrame implements MouseListener, MouseMotionL
 
             pan.boardO.getHistory().reset();
             Board comBoard = null;
-            if (algorithme == 2) {
-                comBoard = GameSearch.minimaxAB(pan.boardO, thinkDepth, computerColor,
-                        GameSearch.minusInfinityBoard(),
-                        GameSearch.plusInfinityBoard());
-            }
+            //if (algorithme == 2) {
+              //  comBoard = GameSearch.minimaxAB(pan.boardO, thinkDepth, computerColor,
+                //        GameSearch.minusInfinityBoard(),
+                  //      GameSearch.plusInfinityBoard());
+            //}
             if (algorithme == 1) {
-                comBoard = GameSearch.minimax(pan.boardO, thinkDepth, computerColor);
+                comBoard = D_Tree.minimax(pan.boardO, thinkDepth, computerColor);
             }
             Move move = comBoard.getHistory().first();
 

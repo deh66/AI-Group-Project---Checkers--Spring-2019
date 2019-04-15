@@ -179,6 +179,8 @@ public class GameSearch
      * searches an already built game tree, this algorithm builds and evaluates
      * the game tree concurrently.
      */
+    
+    /*
     public static Board minimaxAB(Board board, int recursion, int player, Board alpha, Board beta) 
     {
         if (recursion > 0) 
@@ -233,8 +235,11 @@ public class GameSearch
             return board;   // Recursion done -> leaf in game tree.
         }
     }
+	*/
+
 
     // The minimax algorithm without alpha-beta cutoff.
+    /*
     public static Board minimax(Board board, int recursion, int player) 
     {
         if (recursion > 0) 
@@ -279,7 +284,7 @@ public class GameSearch
             // Recursion done -> leaf in game tree.
         }
     }
-
+*/
     public static int opponent(int player) 
     {
         if (player == CheckerPosition.WHITE) 

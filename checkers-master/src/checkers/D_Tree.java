@@ -34,22 +34,48 @@ package checkers;
 public class D_Tree extends GameSearch
 {
 	
-  public static Board decisionTree (Board gameBoard, int count, int player)
+  public static Board minimax (Board gameBoard, int count, int player)
   {
-	  MoveList moves = null;
-	  moves = findAllValidMoves(gameBoard, player);
-	  
-	  if (moves.size() == 0)
+	  if (count > 0)
 	  {
-		  return gameBoard;
-	  }
+		  MoveList moves = null;
+		  moves = findAllValidMoves(gameBoard, player);
 	  
-      MoveIterator iterator = moves.getIterator();
-      BoardList boardlist = new BoardList();
-  }
+		  if (moves.size() == 0)
+		  {
+			  return gameBoard;
+		  }
+	  
+		  MoveIterator iterator = moves.getIterator();
+		  BoardList boardlist = new BoardList();
+      
+		  if (player == CheckerPosition.BLACK) 
+		  {   
+			  // Black - min node.
+			  while (iterator.hasNext()) 
+			  {
+				  boardlist.add(minimax(executeMove(iterator.next(), gameBoard), count - 1, opponent(player)));
+		      }
+          
+			  return boardlist.findBestBoard(CheckerPosition.BLACK);
+		  } 
+      
+	   else 
+       {      
+      	  // White - max node.
+          while (iterator.hasNext()) 
+          {
+              boardlist.add(minimax(executeMove(iterator.next(), gameBoard), count - 1, opponent(player)));
+          }
+          
+          return boardlist.findBestBoard(CheckerPosition.WHITE);
+       } 
+	 }
   
-  public static Board createNode ()
-  {
-	  
+     else 
+     {
+        return gameBoard;   
+        // Recursion done -> leaf in game tree.
+     }
   }
 }
