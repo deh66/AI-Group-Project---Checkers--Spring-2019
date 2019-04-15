@@ -36,7 +36,7 @@ public class D_Tree extends GameSearch
 	
   public static Board minimax (Board gameBoard, int count, int player)
   {
-	  if (count > 0)
+	  while (count > 0)
 	  {
 		  MoveList moves = null;
 		  moves = findAllValidMoves(gameBoard, player);
@@ -60,22 +60,18 @@ public class D_Tree extends GameSearch
 			  return boardlist.findBestBoard(CheckerPosition.BLACK);
 		  } 
       
-	   else 
-       {      
-      	  // White - max node.
-          while (iterator.hasNext()) 
-          {
-              boardlist.add(minimax(executeMove(iterator.next(), gameBoard), count - 1, opponent(player)));
-          }
+	      else 
+          {      
+      	    // White - max node.
+            while (iterator.hasNext()) 
+            {
+                boardlist.add(minimax(executeMove(iterator.next(), gameBoard), count - 1, opponent(player)));
+            }
           
-          return boardlist.findBestBoard(CheckerPosition.WHITE);
-       } 
-	 }
-  
-     else 
-     {
-        return gameBoard;   
-        // Recursion done -> leaf in game tree.
-     }
+            return boardlist.findBestBoard(CheckerPosition.WHITE);
+          } 
+	   }
+         return gameBoard;   
   }
+  
 }

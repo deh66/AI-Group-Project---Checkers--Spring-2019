@@ -74,7 +74,7 @@ public class CheckersFrame extends JFrame implements MouseListener, MouseMotionL
     private int userColor = CheckerPosition.WHITE;
     private int computerColor = CheckerPosition.BLACK;
     private Coordinate from;
-    private int thinkDepth = 2;
+    private int thinkDepth = 8;
     private boolean alreadyMoved;
     private boolean moving;
     private int nbrBacks = 0;
@@ -157,7 +157,6 @@ public class CheckersFrame extends JFrame implements MouseListener, MouseMotionL
         // add algorithme item to the menu bar
         menuBar.add(algorithme);
         JMenu levels = new JMenu("levels");
-        menuBar.add(levels);
         ButtonGroup levelsGroup = new ButtonGroup(); // group for radio buttons
         
         JRadioButtonMenuItem hardLevel = new JRadioButtonMenuItem("hardLevel");        
@@ -173,7 +172,7 @@ public class CheckersFrame extends JFrame implements MouseListener, MouseMotionL
         mediumLevel.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //System.out.println("mediumLevel");
+                
                 
             }
         });
@@ -188,33 +187,20 @@ public class CheckersFrame extends JFrame implements MouseListener, MouseMotionL
         });
         // add radio buttons to the group, to check only one of them
         levelsGroup.add(hardLevel);
-        //levelsGroup.add(mediumLevel);
-        levelsGroup.add(easyLevel);
-        
         levels.add(hardLevel);
-        //levels.add(mediumLevel);
-        levels.add(easyLevel);
         
         if(thinkDepth == 8){
             hardLevel.setSelected(true);
             mediumLevel.setSelected(false);
             easyLevel.setSelected(false);
         }
-        else if(thinkDepth == 5){
-            hardLevel.setSelected(false);
-            mediumLevel.setSelected(true);
-            easyLevel.setSelected(false);
-        }else if(thinkDepth == 2){
-            hardLevel.setSelected(false);
-            mediumLevel.setSelected(false);
-            easyLevel.setSelected(true);
-        }
         // les styles & music
         JMenu options = new JMenu("Options");
         menuBar.add(options);
         // options
-        JMenuItem styleAndMusic = new JMenuItem("style And Music", null);
-        styleAndMusic.addActionListener(new ActionListener() {
+        JMenuItem styleAndMusic = new JMenuItem("", null);
+        styleAndMusic.addActionListener(new ActionListener() 
+        {
             @Override
             public void actionPerformed(ActionEvent e) {
                 System.out.println("styles And Music");
@@ -653,11 +639,6 @@ public class CheckersFrame extends JFrame implements MouseListener, MouseMotionL
 
             pan.boardO.getHistory().reset();
             Board comBoard = null;
-            //if (algorithme == 2) {
-              //  comBoard = GameSearch.minimaxAB(pan.boardO, thinkDepth, computerColor,
-                //        GameSearch.minusInfinityBoard(),
-                  //      GameSearch.plusInfinityBoard());
-            //}
             if (algorithme == 1) {
                 comBoard = D_Tree.minimax(pan.boardO, thinkDepth, computerColor);
             }
