@@ -44,11 +44,15 @@ public class Board implements Serializable{
    }
 
    
-   public int evaluate() {
+   public int evaluate() 
+   {
       int score = 0;
       Coordinate c = null;
-      for (int i = 1; i < 33; i++) {
+      
+      for (int i = 1; i < 33; i++) 
+      {
          c = new Coordinate(i);
+         
          if (getChecker(c) != null)
             score = score + getChecker(c).getValue();
       }

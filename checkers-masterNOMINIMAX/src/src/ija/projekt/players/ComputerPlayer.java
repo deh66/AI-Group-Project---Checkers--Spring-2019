@@ -11,6 +11,7 @@ import ija.projekt.game.Game;
 import ija.projekt.game.Player;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -18,6 +19,7 @@ import java.util.List;
  */
 public class ComputerPlayer extends Player {
 
+	int count = 5;
     /**
      * 
      * @param white
@@ -41,17 +43,28 @@ public class ComputerPlayer extends Player {
      * @param game
      * @return
      */
-    private Step calculateRandomStep(Game game) {
-        List<Step> steps = getAllStep(game);
-        int size = steps.size();
-        Step step = null;
+    private Step calculateRandomStep(List<Step> steps, Game game, int num) 
+    {    	
+    	while (num > 0)
+    	{
+        	Step step = null;
+    		steps = getAllStep(game);
+        	int size = steps.size();
 
-        if (size > 0) {
-            int randomNum = 0 + (int) (Math.random() * (size - 1));
-            step = steps.get(randomNum);
-        }
+        	steps.add(calculateRandomStep(steps, game, num - 1));
+        
+        	if (size > 0) 
+        	{
+            	int randomNum = 0 + (int) (Math.random() * (size - 1));
+            	step = steps.get(randomNum);
+        	}
+        	System.out.println(step);
+        	System.out.println(steps.size());
+        	game.doMove(step.getFrom(), step.getTo());
+            return step;
+    	}
 
-        return step;
+		return null;
     }
 
     /**
@@ -109,8 +122,10 @@ public class ComputerPlayer extends Player {
     public void yourTurn() {
         Runnable r = new Runnable() {
             @Override
-            public void run() {
-                Step step = calculateRandomStep(game);
+            public void run() 
+            {
+            	List<Step> stepsSend = null;
+                calculateRandomStep(stepsSend, game, count);
 
                 try {
                     Thread.sleep(1000);
@@ -118,7 +133,7 @@ public class ComputerPlayer extends Player {
                     ex.printStackTrace();
                 }
                 
-                doMove(step);
+               // doMove(step);
             }
         };
 

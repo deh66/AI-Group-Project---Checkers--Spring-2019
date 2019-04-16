@@ -16,3 +16,4 @@ hs_err_pid*
 /src/.euml2
 /src/.classpath
 /src/doc
+/bin/
