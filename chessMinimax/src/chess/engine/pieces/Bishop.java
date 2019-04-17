@@ -20,7 +20,7 @@ public class Bishop extends Piece
 	
 	public Bishop(final Alliance pieceAlliance, final int piecePosition) 
 	{
-		super(piecePosition, pieceAlliance);
+		super(PieceType.BISHOP, piecePosition, pieceAlliance);
 	}
 
 	@Override
@@ -69,6 +69,12 @@ public class Bishop extends Piece
 		return ImmutableList.copyOf(legalMoves);
 	}
 	
+	@Override
+	public String toString()
+	{
+		return PieceType.BISHOP.toString();
+	}
+	
     private static boolean isFirstColumnExclusion(final int currentPosition, final int candidateOffset)
     {
     	return BoardUtils.FIRST_COLUMN[currentPosition] && (candidateOffset == -9 || candidateOffset == 7);
@@ -78,5 +84,11 @@ public class Bishop extends Piece
     {
     	return BoardUtils.EIGHTH_COLUMN[currentPosition] && (candidateOffset == -7 || candidateOffset == 9);
     }
+
+	@Override
+	public Bishop movePiece(final Move move) 
+	{
+		return new Bishop(move.getMovedPiece().getPieceAlliance(), move.getDestinationCoordinate());
+	}
 
 }

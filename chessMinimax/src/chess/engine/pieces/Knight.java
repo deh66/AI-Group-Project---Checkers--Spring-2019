@@ -1,8 +1,6 @@
 package chess.engine.pieces;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
+import java.util.*;
 
 import com.google.common.collect.ImmutableList;
 
@@ -11,6 +9,8 @@ import chess.engine.board.Board;
 import chess.engine.board.BoardUtils;
 import chess.engine.board.Move;
 import chess.engine.board.Tile;
+import chess.engine.pieces.Piece.PieceType;
+
 import static chess.engine.board.Move.*;
 
 public class Knight extends Piece
@@ -19,7 +19,7 @@ public class Knight extends Piece
 
 	public Knight(final Alliance pieceAlliance, final int piecePosition) 
 	{
-		super(piecePosition, pieceAlliance);
+		super(PieceType.KNIGHT, piecePosition, pieceAlliance);
 		
 	}
 
@@ -60,6 +60,18 @@ public class Knight extends Piece
 		}
 		
 		return ImmutableList.copyOf(legalMoves);
+	}
+	
+	@Override
+	public Knight movePiece(final Move move) 
+	{
+		return new Knight(move.getMovedPiece().getPieceAlliance(), move.getDestinationCoordinate());
+	}
+	
+	@Override
+	public String toString()
+	{
+		return PieceType.KNIGHT.toString();
 	}
 	
     private static boolean isFirstColumnExclusion(final int currentPosition, final int candidateOffset)

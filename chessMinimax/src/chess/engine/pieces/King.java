@@ -13,6 +13,7 @@ import chess.engine.board.Move;
 import chess.engine.board.Tile;
 import chess.engine.board.Move.AttackMove;
 import chess.engine.board.Move.MajorMove;
+import chess.engine.pieces.Piece.PieceType;
 
 public class King extends Piece
 {
@@ -20,7 +21,7 @@ public class King extends Piece
 
 	public King(final Alliance pieceAlliance, final int piecePosition) 
 	{
-		super(piecePosition, pieceAlliance);
+		super(PieceType.KING, piecePosition, pieceAlliance);
 	}
 
 	@Override
@@ -60,6 +61,18 @@ public class King extends Piece
 		}
 		
 		return ImmutableList.copyOf(legalMoves);
+	}
+	
+	@Override
+	public King movePiece(final Move move) 
+	{
+		return new King(move.getMovedPiece().getPieceAlliance(), move.getDestinationCoordinate());
+	}
+	
+	@Override
+	public String toString()
+	{
+		return PieceType.KING.toString();
 	}
 	
     private static boolean isFirstColumnExclusion(final int currentPosition, final int candidateOffset)

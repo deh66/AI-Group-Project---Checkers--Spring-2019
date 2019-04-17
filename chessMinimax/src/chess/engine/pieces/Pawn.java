@@ -12,6 +12,7 @@ import chess.engine.board.BoardUtils;
 import chess.engine.board.Move;
 import chess.engine.board.Move.AttackMove;
 import chess.engine.board.Move.MajorMove;
+import chess.engine.pieces.Piece.PieceType;
 
 public class Pawn extends Piece
 {
@@ -19,7 +20,7 @@ public class Pawn extends Piece
 
 	public Pawn(final Alliance pieceAlliance, final int piecePosition) 
 	{
-		super(piecePosition, pieceAlliance);
+		super(PieceType.PAWN, piecePosition, pieceAlliance);
 	}
 
 	@Override
@@ -82,4 +83,15 @@ public class Pawn extends Piece
 		return ImmutableList.copyOf(legalMoves);
 	}
 
+	@Override
+	public Pawn movePiece(final Move move) 
+	{
+		return new Pawn(move.getMovedPiece().getPieceAlliance(), move.getDestinationCoordinate());
+	}
+	
+	@Override
+	public String toString()
+	{
+		return PieceType.PAWN.toString();
+	}
 }
