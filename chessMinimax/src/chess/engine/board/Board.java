@@ -1,10 +1,13 @@
 package chess.engine.board;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Iterables;
-
 import chess.engine.alliance.Alliance;
 import chess.engine.pieces.Bishop;
 import chess.engine.pieces.King;
