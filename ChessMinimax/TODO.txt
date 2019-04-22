@@ -1,0 +1,11 @@
+Print hueristics for each AI move
+	- min and max values
+	- evaluator values
+
+Prevent AI from always taking same moves.
+	- Randomize first move if the first move is made by AI.
+	- Improve hueristics.
+
+Explain the evaluator better in our presentation.
+
+more...
