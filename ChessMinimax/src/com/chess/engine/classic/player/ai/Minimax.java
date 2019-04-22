@@ -28,9 +28,9 @@ public class Minimax implements MoveStrat
         Move bestMove = null;
         int highestSeenVal = Integer.MIN_VALUE;
         int lowestSeenVal = Integer.MAX_VALUE;
-        int currentVal;
+        int currentVal = 0;
 
-        System.out.println(board.currentPlayer() + " using Minimax with depth = " + depth);
+        System.out.println(board.currentPlayer() + " calculating next move using Minimax with depth = " + depth + "...");
 
         int numberMoves = board.currentPlayer().getLegalMoves().size();
 
@@ -56,7 +56,17 @@ public class Minimax implements MoveStrat
             }
         }
 
+        // Print execution time in seconds
         final long executionTime = System.currentTimeMillis() - startTime;
+        float timeSeconds = executionTime / 1000;   
+        System.out.println("Move calculation time: " + timeSeconds + " seconds");
+        
+        // Print simple heuristics
+        System.out.println("number of legal moves: " + numberMoves);
+        //System.out.println("highest value: " + highestSeenVal);
+        //System.out.println("lowest value: " + lowestSeenVal);
+        
+        System.out.println("chosen value of move: " + currentVal);
 
         return bestMove;
     }
