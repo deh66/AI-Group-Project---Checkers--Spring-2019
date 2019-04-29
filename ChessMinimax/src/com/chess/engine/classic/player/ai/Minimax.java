@@ -24,7 +24,7 @@ public class Minimax implements MoveStrat
     @Override
     public Move exe(Board board)
     {
-        final long startTime = System.currentTimeMillis();
+        long startTime = System.currentTimeMillis();
         Move bestMove = null;
         int highestSeenVal = Integer.MIN_VALUE;
         int lowestSeenVal = Integer.MAX_VALUE;
@@ -35,9 +35,9 @@ public class Minimax implements MoveStrat
         int numberMoves = board.currentPlayer().getLegalMoves().size();
 
         // move once before checking if player was white or black, then call the given min or max
-        for(final Move move : board.currentPlayer().getLegalMoves())
+        for(Move move : board.currentPlayer().getLegalMoves())
         {
-            final MoveTransition moveTransition = board.currentPlayer().makeMove(move);
+            MoveTransition moveTransition = board.currentPlayer().makeMove(move);
 
             if (moveTransition.getMoveStatus().isDone())
             {
@@ -57,21 +57,24 @@ public class Minimax implements MoveStrat
         }
 
         // Print execution time in seconds
-        final long executionTime = System.currentTimeMillis() - startTime;
-        float timeSeconds = executionTime / 1000;   
+        long executionTime = System.currentTimeMillis() - startTime;
+        float timeSeconds = executionTime / 1000;
+
+        System.out.println("");
         System.out.println("Move calculation time: " + timeSeconds + " seconds");
         
         // Print simple heuristics
-        System.out.println("number of legal moves: " + numberMoves);
+        System.out.println("Number of legal moves: " + numberMoves);
         //System.out.println("highest value: " + highestSeenVal);
         //System.out.println("lowest value: " + lowestSeenVal);
         
-        System.out.println("chosen value of move: " + currentVal);
+        System.out.println("Chosen value of move: " + currentVal);
+        System.out.println("");
 
         return bestMove;
     }
 
-    public int min(final Board board, final int depth)
+    public int min(Board board, int depth)
     {
         if(depth == 0 || endGame(board))
         {
@@ -80,13 +83,14 @@ public class Minimax implements MoveStrat
 
         int lowestSeenVal = Integer.MAX_VALUE;
 
-        for (final Move move : board.currentPlayer().getLegalMoves())
+        for (Move move : board.currentPlayer().getLegalMoves())
         {
-            final MoveTransition moveTransition = board.currentPlayer().makeMove(move);
+            MoveTransition moveTransition = board.currentPlayer().makeMove(move);
 
             if(moveTransition.getMoveStatus().isDone())
             {
-                final int currentValue = max(moveTransition.getToBoard(), depth - 1);
+                int currentValue = max(moveTransition.getToBoard(), depth - 1);
+                System.out.println("Min: " + currentValue);
 
                 if (currentValue <= lowestSeenVal)
                 {
@@ -99,7 +103,7 @@ public class Minimax implements MoveStrat
         return lowestSeenVal;
     }
 
-    public int max(final Board board, final int depth)
+    public int max(Board board, int depth)
     {
         if(depth == 0 || endGame(board))
         {
@@ -108,13 +112,14 @@ public class Minimax implements MoveStrat
 
         int highestSeenVal = Integer.MIN_VALUE;
 
-        for (final Move move : board.currentPlayer().getLegalMoves())
+        for (Move move : board.currentPlayer().getLegalMoves())
         {
-            final MoveTransition moveTransition = board.currentPlayer().makeMove(move);
+            MoveTransition moveTransition = board.currentPlayer().makeMove(move);
 
             if(moveTransition.getMoveStatus().isDone())
             {
-                final int currentValue = min(moveTransition.getToBoard(), depth - 1);
+                int currentValue = min(moveTransition.getToBoard(), depth - 1);
+                System.out.println("Max: " + currentValue);
 
                 if (currentValue >= highestSeenVal)
                 {

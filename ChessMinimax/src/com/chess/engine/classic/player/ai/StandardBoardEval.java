@@ -45,7 +45,7 @@ public class StandardBoardEval implements BoardEval
     {
         int pieceValueScore = 0;
 
-        for (final Piece piece : player.getActivePieces())
+        for (Piece piece : player.getActivePieces())
         {
             // enums use proven heuristic values as piece weight
             pieceValueScore += piece.getPieceValue();
