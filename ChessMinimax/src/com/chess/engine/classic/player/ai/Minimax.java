@@ -75,7 +75,7 @@ public class Minimax implements MoveStrat
             }
             else
             {
-            	System.out.println("Calculating move of piece: " + move.getMovedPiece().getPieceType().name() + 
+            	System.out.println("Calculating move: " + move.getMovedPiece().getPieceType().name() + 
             			" at position: " + BitBoard.getPositionAtCoordinate( move.getCurrentCoordinate() ) +
             			" to position: " + BitBoard.getPositionAtCoordinate( move.getDestinationCoordinate() ) +
             			" Value of move: " + currentVal);
