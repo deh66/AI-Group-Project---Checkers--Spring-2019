@@ -71,7 +71,7 @@ public class Minimax implements MoveStrat
             			" at position: " + BitBoard.getPositionAtCoordinate( move.getCurrentCoordinate() ) +
             			" to position: " + BitBoard.getPositionAtCoordinate( move.getDestinationCoordinate() ) +
             			" Value of move: " + currentVal);
-            	System.err.println("\tThis is the best new move");
+            	System.err.println("\tThis is the new best move");
             }
             else
             {
