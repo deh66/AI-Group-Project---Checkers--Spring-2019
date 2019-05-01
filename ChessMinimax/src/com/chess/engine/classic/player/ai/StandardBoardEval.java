@@ -26,7 +26,7 @@ public class StandardBoardEval implements BoardEval
         return scorePlayer(board, board.whitePlayer(), depth) - scorePlayer(board, board.blackPlayer() , depth);
     }
 
-    private int scorePlayer(Board board, Player player, int depth)
+    public int scorePlayer(Board board, Player player, int depth)
     {
         return pieceValue(player) + mobility(player) + check(player);
     }

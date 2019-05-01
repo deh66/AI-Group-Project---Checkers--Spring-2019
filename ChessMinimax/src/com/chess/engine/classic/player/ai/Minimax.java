@@ -44,8 +44,7 @@ public class Minimax implements MoveStrat
 
         // move once before checking if player was white or black, then call the given min or max
         for(Move move : board.currentPlayer().getLegalMoves())
-        {
-        	//System.out.println("Piece Moving: " + move.getMovedPiece().getPieceType() + " at position: " + move.getMovedPiece().getPiecePosition());
+        {        	
         	MoveTransition moveTransition = board.currentPlayer().makeMove(move);
 
             if (moveTransition.getMoveStatus().isDone())
@@ -88,16 +87,30 @@ public class Minimax implements MoveStrat
         float timeSeconds = executionTime / 1000;
 
         System.out.println("");
+        System.out.println("=================================================================================");
+        
+        System.out.println("");        
         System.out.println("Move calculation time: ~" + timeSeconds + " seconds");
         
-        // Print simple heuristics
+        System.out.println("Current Player: " + board.currentPlayer());
         System.out.println("Number of legal moves searched: " + numberMoves);
         System.out.println("\tNumber of total moves evaluated: ~" + numberMoves * depth);
         
+        
+        System.out.println(""); 
         System.out.println("Choosen Move: " +
         		bestMove.getMovedPiece().getPieceType().name() +
         		" From position: " + BitBoard.getPositionAtCoordinate( bestMove.getCurrentCoordinate() ) +
         		" To position: " +   BitBoard.getPositionAtCoordinate( bestMove.getDestinationCoordinate() ));
+        
+        System.out.println("Huerestic value for this move:\n" + 
+        		"\tTotal Value: " + ( boardEval.scorePlayer(board, board.whitePlayer(), depth) - boardEval.scorePlayer(board, board.blackPlayer(), depth) )+
+        		"\tPiece Value: " + bestMove.getMovedPiece().getPieceValue() +
+        		"\tPiece Mobility: " + bestMove.getMovedPiece().calculateLegalMoves(board).size() + 
+        		"\tBonuses: " + ( this.boardEval.evaluate(board, depth) - bestMove.getMovedPiece().getPieceValue() + bestMove.getMovedPiece().calculateLegalMoves(board).size()) );
+        
+        System.out.println("\tWhite Player Value: " + boardEval.scorePlayer(board, board.whitePlayer(), depth));
+        System.out.println("\tBlack Player Value: " + boardEval.scorePlayer(board, board.blackPlayer(), depth));
         
         System.out.println("");
 
