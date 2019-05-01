@@ -1,5 +1,6 @@
 package com.chess.engine.classic.player.ai;
 
+import com.chess.engine.bitboards.BitBoard;
 import com.chess.engine.classic.board.Board;
 import com.chess.engine.classic.board.Move;
 import com.chess.engine.classic.board.MoveTransition;
@@ -29,15 +30,23 @@ public class Minimax implements MoveStrat
         int highestSeenVal = Integer.MIN_VALUE;
         int lowestSeenVal = Integer.MAX_VALUE;
         int currentVal = 0;
-
-        System.out.println(board.currentPlayer() + " calculating next move using Minimax with depth = " + depth + "...");
-
+        
+        System.out.println(board.currentPlayer() + 
+        		" calculating the next move using Minimax looking " + depth + " moves ahead (depth of " + depth + ")...");
+        
+        if (board.currentPlayer().getAlliance().isBlack())      
+        	System.out.println("\t" + board.currentPlayer() + " is searching for MINIMUM value...");
+        else     
+        	System.out.println("\t" + board.currentPlayer() + " is searching for MAXIMUM value...");
+        
+        
         int numberMoves = board.currentPlayer().getLegalMoves().size();
 
         // move once before checking if player was white or black, then call the given min or max
         for(Move move : board.currentPlayer().getLegalMoves())
         {
-            MoveTransition moveTransition = board.currentPlayer().makeMove(move);
+        	//System.out.println("Piece Moving: " + move.getMovedPiece().getPieceType() + " at position: " + move.getMovedPiece().getPiecePosition());
+        	MoveTransition moveTransition = board.currentPlayer().makeMove(move);
 
             if (moveTransition.getMoveStatus().isDone())
             {
@@ -54,21 +63,42 @@ public class Minimax implements MoveStrat
                     bestMove = move;
                 }
             }
+            
+            
+            //System.out.println("Value of this move: " + currentVal);
+            if(bestMove == move)
+            {            	
+            	System.err.println("Calculating move: " + move.getMovedPiece().getPieceType().name() + 
+            			" at position: " + BitBoard.getPositionAtCoordinate( move.getCurrentCoordinate() ) +
+            			" to position: " + BitBoard.getPositionAtCoordinate( move.getDestinationCoordinate() ) +
+            			" Value of move: " + currentVal);
+            	System.err.println("\tThis is the best new move");
+            }
+            else
+            {
+            	System.out.println("Calculating move of piece: " + move.getMovedPiece().getPieceType().name() + 
+            			" at position: " + BitBoard.getPositionAtCoordinate( move.getCurrentCoordinate() ) +
+            			" to position: " + BitBoard.getPositionAtCoordinate( move.getDestinationCoordinate() ) +
+            			" Value of move: " + currentVal);
+            }
         }
-
+        
         // Print execution time in seconds
         long executionTime = System.currentTimeMillis() - startTime;
         float timeSeconds = executionTime / 1000;
 
         System.out.println("");
-        System.out.println("Move calculation time: " + timeSeconds + " seconds");
+        System.out.println("Move calculation time: ~" + timeSeconds + " seconds");
         
         // Print simple heuristics
-        System.out.println("Number of legal moves: " + numberMoves);
-        //System.out.println("highest value: " + highestSeenVal);
-        //System.out.println("lowest value: " + lowestSeenVal);
+        System.out.println("Number of legal moves searched: " + numberMoves);
+        System.out.println("\tNumber of total moves evaluated: ~" + numberMoves * depth);
         
-        System.out.println("Chosen value of move: " + currentVal);
+        System.out.println("Choosen Move: " +
+        		bestMove.getMovedPiece().getPieceType().name() +
+        		" From position: " + BitBoard.getPositionAtCoordinate( bestMove.getCurrentCoordinate() ) +
+        		" To position: " +   BitBoard.getPositionAtCoordinate( bestMove.getDestinationCoordinate() ));
+        
         System.out.println("");
 
         return bestMove;
@@ -90,7 +120,7 @@ public class Minimax implements MoveStrat
             if(moveTransition.getMoveStatus().isDone())
             {
                 int currentValue = max(moveTransition.getToBoard(), depth - 1);
-                System.out.println("Min: " + currentValue);
+                //System.out.println("Min: " + currentValue);
 
                 if (currentValue <= lowestSeenVal)
                 {
@@ -119,7 +149,7 @@ public class Minimax implements MoveStrat
             if(moveTransition.getMoveStatus().isDone())
             {
                 int currentValue = min(moveTransition.getToBoard(), depth - 1);
-                System.out.println("Max: " + currentValue);
+                //System.out.println("Max: " + currentValue);
 
                 if (currentValue >= highestSeenVal)
                 {
